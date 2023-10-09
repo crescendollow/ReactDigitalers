@@ -1,12 +1,21 @@
 import './App.css';
+import './index.css'
+import React from 'react';
+import NavBar from './components/NavBar';
+import NewsLoader from './components/NewsLoader';
+import CommentsLoader from './components/CommentsLoader';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hola mundo</h1>
-      </header>
-    </div>
+    <>
+      <NavBar></NavBar>
+      <main className="container-fluid m-0 p-0">
+        <NewsLoader></NewsLoader>
+        <CommentsLoader></CommentsLoader>
+        <Footer></Footer>
+      </main>
+    </>
   );
 }
 
