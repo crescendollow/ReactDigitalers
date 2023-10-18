@@ -11,7 +11,7 @@ const NewsLoader = () => {
             <div id="newsContainer" className="d-flex flex-wrap justify-content-around">
                 {
                 News.map((n)=>(
-                    <div key={n.id}>
+                    <div key={n.title}>
                     <IndNews 
                         title={n.title}
                         body={n.body}

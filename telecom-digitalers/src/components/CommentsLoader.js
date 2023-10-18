@@ -11,7 +11,7 @@ const CommentsLoader = () => {
         <section id="comentarios" className="d-flex flex-wrap justify-content-around">
             <div className="d-flex flex-wrap justify-content-around">
             {Comments.map((n) => (
-                <div key={n.id}>
+                <div key={n.nombre}>
                     <IndComment
                     nombre={n.nombre}
                     rol={n.rol}
