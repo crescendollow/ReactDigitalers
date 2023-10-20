@@ -1,6 +1,7 @@
 import Comments from "../constants/comments";
 import IndComment from "./IndComment";
 import "../App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CommentsLoader = () => {
     return (

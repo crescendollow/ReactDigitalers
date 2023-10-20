@@ -5,6 +5,7 @@ import NewsLoader from './components/NewsLoader';
 import CommentsLoader from './components/CommentsLoader';
 import Footer from './components/Footer';
 import Form from './components/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

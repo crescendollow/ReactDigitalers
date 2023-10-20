@@ -1,5 +1,6 @@
 import Fb from "../public/Images/facebook.webp";
 import Ig from "../public/Images/instagram.webp";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
     return (

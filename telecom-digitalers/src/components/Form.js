@@ -1,5 +1,6 @@
 import IndComment from "../components/IndComment";
 import Comments from "../constants/comments";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Form = () => {
     window.addEventListener("load", () => {

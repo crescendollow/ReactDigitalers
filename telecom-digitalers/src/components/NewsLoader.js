@@ -1,6 +1,7 @@
 import News from "../constants/news";
 import IndNews from "./IndNews";
 import "../App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NewsLoader = () => {
     return(

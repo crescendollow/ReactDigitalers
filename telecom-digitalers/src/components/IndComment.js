@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import Ruta from "../public/Images/Avatar.jpg" 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndNews = (props) => {
     return (
