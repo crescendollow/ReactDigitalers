@@ -1,17 +1,55 @@
 import React from "react";
 import "../App.css";
-import Ruta from "../public/Images/Avatar.jpg" 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
 
-const IndNews = (props) => {
+const IndComment = ({agregaComentario}) => {
+
+    const [nombre, setNombre] = useState("");
+    const [rol, setRol] = useState("");
+    const [comentario, setComentario] = useState("");
+
     return (
-        <article className="comentario col-5 noticia m-2 p-0 rounded shadow mb-5 bg-body-tertiary rounded text-center">
-            <img src={Ruta} alt="User" width="60px"/>
-            <h3>Nombre: {props.nombre}</h3>
-            <h4>Rol: {props.rol}</h4>
-            <h5>Experiencia Personal: {props.comentario}</h5>
-        </article>
-    );
-};
+        <section className="form-father-class d-block m-3">
+            <div className="form" id="form">
+                <h1 className="alert alert-info text-center mt-4">
+                    Dejanos un comentario!
+                </h1>
+                <form>
+                        <label htmlFor="nombre" className="">Nombre</label>
+                        <input
+                            id="nombre"
+                            className="input"
+                            type="text"
+                            placeholder="Ingrese su Nombre"
+                            onChange={(evt)=>{setNombre(evt.target.value)}}
+                        />
 
-export default IndNews;
+                        <label htmlFor="rol" className="">Rol</label>
+                        <input
+                            id="rol"
+                            className="input"
+                            type="text"
+                            placeholder="Ingrese su Rol"
+                            onChange={(evt)=>{setRol(evt.target.value)}}
+                        />
+
+                        <label htmlFor="comentario" className="">Comentario</label>
+                        <input
+                            id="comentario"
+                            className="input"
+                            type="text"
+                            placeholder="Ingrese su Comentario"
+                            onChange={(evt)=>{setComentario(evt.target.value)}}
+                        />
+
+                        <button type="button" className="btn btn-primary mt-4 w-100" onClick={()=>{
+                            agregaComentario({nombre,rol,comentario})
+                        }}>
+                            Ageregar comentario!
+                        </button>
+                </form>
+            </div>
+        </section>);
+}
+export default IndComment;

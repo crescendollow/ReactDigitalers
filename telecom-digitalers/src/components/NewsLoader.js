@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NewsLoader = () => {
     return(
-        <div className="p-1 row">
+        <div className="p-1 justify-content-around">
             <header className="mainHeader containerTitle text-center mb-3">
                 Conoce las ultimas noticias Digitalers
             </header>

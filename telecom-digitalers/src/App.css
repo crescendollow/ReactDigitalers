@@ -8,6 +8,10 @@ body>header {
     background-color: rgb(255, 230, 247);
 }
 
+.mainHeader{
+    background-color: rgb(255, 230, 247);
+}
+
 body>header>div {
     display: inline-block;
 }
@@ -179,13 +183,13 @@ h5 {
     font-weight: 100;
 }
 
-.comentario img {
+.imgAvatar{
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 50%;
 }
 
-.comentario img:hover {
+.imgAvatar:hover {
     transform: scale(1.25);
     transition: 0.2s;
 }

@@ -1,27 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../../src/App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class NavBar extends Component {
-render() {
+const NavBar = ({ rutas }) => {
     return (
-    <div>
-        <header>
-            <h1 className="title">Digitalers Portal &#127748;</h1>
-            <h2 className="pageSubtitle">Ultimas noticias del curso digitalers</h2>
-        </header>
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#form">Contacto</a>
-                </li>
+            <ul className="nav">
+                {
+                    rutas.map( (ruta) => (
+                        <li className="nav-item" key={ruta.url}>
+                            <Link className="nav-link" to={ruta.url}>{ruta.nombre}</Link>
+                        </li>
+                    ))
+                }
             </ul>
-        </nav>
-    </div>);
-    }
+        </nav>);
 }
 
 export default NavBar;
